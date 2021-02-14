@@ -1,5 +1,6 @@
 public class Tetris {
     public static void main(String[] args) {
-        new Game().gameStart();
+        Thread th = new Thread(new TetrisBoard());
+        th.start();
     }
 }
